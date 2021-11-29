@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_day"
+            android:layout_width="93dp"
+            android:layout_height="47dp"
+            android:ems="15"
+            android:gravity="center"
+            android:hint="天"
+            android:inputType="number"
+            android:textSize="60px" />
+
+        <TextView
+            android:layout_width="19dp"
+            android:layout_height="85dp"
+            android:text=":"
+            android:gravity="center"
+            android:textSize="50dp" />
+
+        <EditText
+            android:id="@+id/input_hour"
+            android:layout_width="79dp"
+            android:layout_height="47dp"
+            android:ems="15"
+            android:gravity="center"
+            android:hint="时"
+            android:inputType="number"
+            android:textSize="60px" />
+
+        <TextView
+            android:layout_width="19dp"
+            android:layout_height="85dp"
+            android:text=":"
+            android:gravity="center"
+            android:textSize="50dp" />
+
+
+        <EditText
+            android:id="@+id/input_minute"
+            android:layout_width="77dp"
+            android:layout_height="47dp"
+            android:ems="15"
+            android:gravity="center"
+            android:hint="分"
+            android:inputType="number"
+            android:textSize="60px" />
+
+        <TextView
+            android:layout_width="19dp"
+            android:layout_height="85dp"
+            android:text=":"
+            android:gravity="center"
+            android:textSize="50dp" />
+
+        <EditText
+            android:id="@+id/input_second"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:ems="15"
+            android:gravity="center"
+            android:hint="秒"
+            android:inputType="number"
+            android:textSize="60px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/get"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="设置倒计时时间" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/setalarm"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:text="设置音乐" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:gravity="center"
+        android:textSize="85dp" />
+
+    <ProgressBar
+        android:id="@+id/bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <!--开始计时-->
+        <Button
+            android:id="@+id/starttime"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="开始计时" />
+
+        <!--停止计时-->
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="停止计时" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fresh"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="重置" />
+
+        <Button
+            android:id="@+id/stopalarm"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="结束" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
